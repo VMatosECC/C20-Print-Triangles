@@ -4,7 +4,7 @@
 using namespace std;
 
 /* --------------------------------------
-Base UP triangle	Base DOWN triangle
+Base UP triangle    Base DOWN triangle
 ****                *
 ***                 **
 **                  ***
