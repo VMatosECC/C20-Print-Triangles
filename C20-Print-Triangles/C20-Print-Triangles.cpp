@@ -12,14 +12,14 @@ Base UP triangle	Base DOWN triangle
 
 --------------------------------------- */
 
-void myCol(int n)
+void printColumn(int n)
 {
 	if (n == 0) {
 		cout << endl;
 		return;
 	}
 	cout << "*";
-	myCol(n - 1);
+	printColumn(n - 1);
 }
 //-------------------------------------
 void printTrigBaseUp(int n)
@@ -28,7 +28,7 @@ void printTrigBaseUp(int n)
 		cout << endl;
 		return;
 	}
-	myCol(n);
+	printColumn(n);
 	printTrigBaseUp(n - 1);
 }
 //------------------------------------------
@@ -38,7 +38,7 @@ void printTrigBaseDown(int n, int N)
 		cout << endl;
 		return;
 	}
-	myCol(n);
+	printColumn(n);
 	printTrigBaseDown(n + 1, N);
 }
 
@@ -55,8 +55,8 @@ void printTrigBaseDown(int n)
 
 int main()
 {
-	printTrigBaseUp(4);   //Base UP triangle
-	printTrigBaseDown(4); //Base DOWN triangle
+	printTrigBaseUp(8);   //Base UP triangle
+	printTrigBaseDown(8); //Base DOWN triangle
 }
 
 
